@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Общие стили */
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #2a2e67;
+    color: #fff;
+    padding: 0.6em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    
+}
+.ind {
+    font-size: 20px;
+}
+.fl {
+    display: flex;
+}
+.cntr {
+    justify-content: center;
+}
+/* Главный герой/баннер */
+#hero {
+    background: url('2.png') no-repeat center center/cover;
+    padding: 60px 0;
+    text-align: left;
+    color: #fff;
+    height: 80vh;
+}
+
+#hero h1 {
+    margin-bottom: 0.2em;
+    font-size: 2.5em;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-left: 50px;
+}
+
+/* Секции */
+section {
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Заголовки секций */
+section h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+/* ABOUT */
+
+.about-section {
+    background-color: #6cbaea;
+    padding: 40px 0;
+}
+чц
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex-basis: 80%;
+    }
+}
+
+/* Курсы */
+.course-card img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0; /* Скругление углов вверху изображения */
+}
+
+/* Остальной CSS остается без изменений */
+
+.courses-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.course-cards {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    
+    flex-basis: 22%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.course-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.course-card:hover {
+    background-color: rgb(144, 255, 236);
+}
+
+@media (max-width: 992px) {
+    .course-card {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .course-card {
+        flex-basis: 90%;
+    }
+}
+
+.courses-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.course-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    flex-basis: 45%; /* Изменено для отображения двух карточек на строке */
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    margin: 10px;
+    padding-bottom: 20px;
+
+}
+
+.course-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        flex-basis: 90%; /* Для мобильных устройств */
+    }
+}
+/* buttons */
+
+.course-card .card-actions {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-details {
+    background-color: #007bff;
+}
+
+.btn-signup {
+    background-color: #28a745;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+
+/* Отзывы */
+
+
+#reviews article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #e9ecef;
+    border-left: 4px solid #007bff;
+}
+
+/* */ 
+
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonial-title {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+.student-info {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.parent-name {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+
+/* */
+
+
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+.student-name {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.parent-name {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* приглашение */
+
+.trial-lesson-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.trial-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trial-text {
+    flex-basis: 50%;
+}
+
+.trial-text h2{
+    text-align: left;
+}
+.trial-image {
+    flex-basis: 45%;
+}
+
+.trial-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+  #wrapper {
+      width: 100px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border: 10px solid #aaa;
+      border-radius: 15px;
+      background-clip: padding-box;
+      text-align: center;
+  }
+  
+  .button {
+      font-size: 13px;
+      padding: 5px 10px;
+      border: 1px solid #aaa;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #fff;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    &:hover {
+      border-color: #999;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
+    &:active {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
+    }
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+      transition: opacity 200ms;
+    visibility: hidden;
+      opacity: 0;
+      &.light {
+      background: rgba(255,255,255,0.5);
+    }
+    .cancel {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: default;
+    }
+    &:target {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  #hero {
+    
+  }
+  .res {
+    position: absolute;
+    left: 40px;
+    top: 280px;
+  }
+  .popup {
+      margin: 75px auto;
+      
+      padding: 20px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      background: #fff;
+      border: 1px solid #666;
+      width: 300px;
+      box-shadow: 0 0 50px rgba(0,0,0,0.5);
+      position: relative;
+      border-radius: 5px;
+    .light & {
+      border-color: #aaa;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+      
+    }
+  
+    .close {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: 20px;
+      opacity: 0.8;
+      transition: all 200ms;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #666;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .content {
+      max-height: 400px;
+      overflow: auto;
+    }
+    p {
+      margin: 0 0 1em;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+
+
+@media (max-width: 768px) {
+    .trial-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trial-image {
+        flex-basis: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* form */
+.inline-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.inline-form input[type="text"],
+.inline-form input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.inline-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inline-form button:hover {
+    background-color: #0056b3;
+}
+
+.blue {background-color: #0056b3;}
+@media (max-width: 768px) {
+    .inline-form {
+        flex-direction: column;
+    }
+}
+
+/* Контакты */
+#contacts {
+    background: #ffffff;
+   
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* about */ 
+.about-us-section {
+    padding: 80px ;
+    background-color: #2a2e67;
+}
+
+.u-center {
+    text-align: center;
+    font-size: 23px;
+}
+.u-ul {
+    list-style: none;
+}
+.u-ul li {
+padding: 8px 0;
+font-size: 20px;
+}
+.u-ul li::before {
+    content: '•';
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.about-u-section {
+    padding: 40px 0;
+    background-color: #a5a3a3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.about-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.about-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.content-block {
+    display: flex;
+    align-items: stretch; /* Обеспечивает одинаковую высоту блоков текста и изображения */
+}
+
+.text, .image {
+    flex: 1; /* Делает блоки текста и изображения равными по ширине */
+}
+
+.image img {
+    width: 100%; /* Заставляет изображение занимать всю ширину родительского блока */
+    height: 100%; /* Заставляет изображение занимать всю высоту родительского блока */
+    object-fit: cover; /* Обеспечивает корректное отображение изображения без искажений */
+}
+
+@media (max-width: 600px) {
+    .content-block {
+        flex-direction: column; /* На маленьких экранах текст и изображение будут располагаться вертикально */
+    }
+}
